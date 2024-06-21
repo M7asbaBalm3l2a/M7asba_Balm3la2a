@@ -1,0 +1,491 @@
+:root {
+    --ColorBlueDark: #084560;
+    --ColorBlueOpen: #2296b3;
+    --ColorGray: #474747;
+    --ColorOrange: #f5843c;
+    --ColorWhite: #fff;
+    --ColorBlack: #000;
+    --ColorGreenDark: #005030;
+    --MainTransition: .3s;
+    --TransitionHalfe: .5s;
+    --FontTajawal: "Tajawal", sans-serif;
+    --FontCairo: "Cairo", sans-serif;
+    --FontTahoma: Droid Arabic Naskh, Tahoma, FontAwesome, Arial, Sans-serif;
+    --FontTahoma2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* ............................ Scrool ............................ */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 10px #aaa inset;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--ColorBlueOpen);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--ColorBlueDark);
+}
+
+/* ............................ End Scrool ............................ */
+/* ............................ Heder ............................ */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 100;
+    position: fixed;
+    transition: background .6s ease-in-out;
+}
+
+/* ............................ Navication ............................ */
+.headerColor {
+    background-color: var(--ColorBlueDark);
+    transition: background .6s ease-in-out;
+}
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-fr .logo-name {
+    font-family: "Cairo", sans-serif;
+    font-size: 26px;
+}
+
+.logo-name,
+.logo-img {
+    cursor: default;
+}
+
+.logo-img img {
+    width: 75px;
+    height: 75px;
+}
+
+.nav-fr,
+.nav-la {
+    font-family: "Tajawal", sans-serif;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-fr {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin-left: 100px;
+}
+
+.nav-la {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+.nav-fr a,
+.nav-la a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-la li {
+    margin-right: 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-la li a {
+    padding: 10px;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize;
+    transition: .5s;
+    overflow-x: hidden;
+}
+
+.nav-la li a:hover {
+    background-color: var(--ColorWhite);
+    color: #000;
+    border-radius: 6px;
+    transition: var(--MainTransition);
+}
+
+.nav-la li a::before {
+    position: absolute;
+    content: "";
+    left: -100%;
+    bottom: 0;
+    height: 3px;
+    width: 50%;
+    background-color: var(--ColorBlack);
+    transition: .5s;
+}
+
+.nav-la li a::after {
+    position: absolute;
+    content: "";
+    right: -100%;
+    bottom: 0;
+    height: 3px;
+    width: 50%;
+    background-color: var(--ColorBlack);
+    transition: .5s;
+}
+
+.nav-la li a:hover::after {
+    right: 0%;
+}
+
+.nav-la li a:hover::before {
+    left: 0%;
+}
+
+/* ............................ End Navication ............................ */
+
+/* ............................ End Heder ............................ */
+
+/* ............................ Home ............................ */
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: url(../Imgs/home/home-m3had.jpg) center center no-repeat fixed;
+    -webkit-background-size: cover;
+    background-size: cover; */
+    background: linear-gradient(180deg, #2296b3, #084560);
+}
+
+.wrapper {
+    position: relative;
+    width: 450px;
+    height: 490px;
+    /* width: 450px;
+    height: 550px; */
+    /* background-color: rgb(240, 240, 240); */
+    background-color: #fff;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    transition: height .2s ease;
+    /* transform: scale(0); */
+}
+
+.wrapper.active {
+    height: 520px;
+
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: var(--ColorBlueDark);
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.alert {
+    margin-top: 30px;
+    padding: 1rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.alert-success {
+    display: none;
+    color: #fff;
+    border-color: #53d542;
+    background-color: #53d542;
+}
+
+.alert-danger {
+    display: none;
+    color: #fff;
+    border-color: #fa535d;
+    background-color: #fa535d;
+}
+
+.form-box h2 {
+    font-size: 2rem;
+    color: var(--ColorBlueDark);
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    /* border-bottom: 2px solid #6b6f80; */
+    margin: 30px 0;
+}
+
+.input-box label {
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    transform: translate(-50%);
+    font-size: 1em;
+    color: #6b6f80;
+    font-weight: bold;
+    pointer-events: none;
+    transition: .3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.input-box input:focus~label {
+    color: var(--ColorBlueDark);
+    top: -15px;
+    font-weight: bold;
+}
+
+.input-box input:focus~.icon {
+    color: var(--ColorBlueDark);
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #6b6f80;
+    outline: none;
+    font-size: 1em;
+    color: var(--ColorBlueDark);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+    transition: .5s;
+}
+
+.input-box input:focus {
+    border-bottom: 3px solid;
+    border-bottom-color: var(--ColorBlueDark);
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #6b6f80;
+    line-height: 57px;
+    transition: .3s;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: var(--ColorBlueDark);
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: var(--ColorBlueDark);
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: var(--ColorBlueDark);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: var(--ColorBlueOpen);
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: .5s;
+}
+
+.btn:hover {
+    background-color: var(--ColorBlueDark);
+}
+
+/* 
+.login-register {
+    font-size: .9em;
+    color: var(--ColorBlueDark);
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a {
+    color: var(--ColorBlueDark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+} */
+
+/* ............................ End Home ............................ */
+
+/* ............................ Footer ............................ */
+
+
+footer {
+    background-color: var(--ColorBlueOpen);
+    height: auto;
+    width: 100%;
+    font-family: "open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-family: var(--FontCairo);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    font-family: var(--FontTajawal);
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-right: 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 2.1rem;
+    transition: color .4s case;
+}
+
+.footer-bottom {
+    background: var(--ColorBlueDark);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 18px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    font-size: 20px;
+    color: var(--ColorWhite);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+}
+
+.socials a:hover i:hover {
+    color: var(--ColorBlueDark);
+}
+
+.footer-bottom span:hover {
+    color: var(--ColorBlack);
+}
+
+/* ............................ EndFooter ............................ */

@@ -1,0 +1,952 @@
+:root {
+    --ColorBlueDark: #084560;
+    --ColorBlueOpen: #2296b3;
+    --ColorGray: #474747;
+    --ColorOrange: #f5843c;
+    --ColorWhite: #fff;
+    --ColorBlack: #000;
+    --ColorGreenDark: #005030;
+    --MainTransition: .3s;
+    --TransitionHalfe: .5s;
+    --FontTajawal: "Tajawal", sans-serif;
+    --FontCairo: "Cairo", sans-serif;
+    --FontTahoma: Droid Arabic Naskh, Tahoma, FontAwesome, Arial, Sans-serif;
+    --FontTahoma2: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* ............................ Scrool ............................ */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+    box-shadow: 0 0 10px #aaa inset;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--ColorBlueOpen);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--ColorBlueDark);
+}
+
+/* ............................ End Scrool ............................ */
+
+/* ............................ Heder ............................ */
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 100;
+    position: fixed;
+    transition: background .6s ease-in-out;
+}
+
+.headerColor {
+    background-color: var(--ColorBlueDark);
+    transition: background .6s ease-in-out;
+}
+
+/* ............................ Navication ............................ */
+
+nav {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-fr .logo-name {
+    font-family: "Cairo", sans-serif;
+    font-size: 26px;
+}
+
+.logo-img img {
+    width: 75px;
+    height: 75px;
+}
+
+.nav-fr,
+.nav-la {
+    font-family: "Tajawal", sans-serif;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-fr {
+    justify-content: space-evenly;
+    width: 40%;
+}
+
+.nav-fr li,
+.nav-la li {
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.5s;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation-delay: calc(.2s* var(--i));
+}
+
+.nav-la {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    font-weight: bold;
+}
+
+.nav-fr li a,
+.nav-la li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-la li a:hover {
+    background-color: var(--ColorWhite);
+    color: #000;
+    border-radius: 6px;
+    transition: var(--MainTransition);
+}
+
+.nav-la a::before {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+}
+
+.nav-la li {
+    width: calc(100% / 4);
+    text-align: center;
+}
+
+.nav-la li a {
+    padding: 10px;
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize;
+    transition: .5s;
+    overflow-x: hidden;
+}
+
+.nav-la li a::before {
+    position: absolute;
+    content: "";
+    left: -100%;
+    bottom: 0;
+    height: 3px;
+    width: 50%;
+    background-color: var(--ColorBlack);
+    transition: .5s;
+}
+
+.nav-la li a::after {
+    position: absolute;
+    content: "";
+    right: -100%;
+    bottom: 0;
+    height: 3px;
+    width: 50%;
+    background-color: var(--ColorBlack);
+    transition: .5s;
+}
+
+.nav-la li a:hover::after {
+    right: 0%;
+}
+
+.nav-la li a:hover::before {
+    left: 0%;
+}
+
+ul.menu {
+    list-style: none;
+    position: absolute;
+    background-color: var(--ColorBlueDark);
+    padding-right: 0;
+    text-align: center;
+    display: none;
+    width: 100%;
+    border-radius: 5px;
+}
+
+ul.menu a {
+    width: 100%;
+    padding: 0;
+}
+
+ul.menu a {
+    display: block;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize;
+    transition: .5s;
+    overflow-x: hidden;
+}
+
+ul.menu a:hover {
+    color: #000;
+    transition: .3s;
+}
+
+ul.menu a::before {
+    position: absolute;
+    content: "";
+    left: -100%;
+    top: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--ColorBlack);
+    transition: .5s;
+}
+
+ul.menu a::after {
+    position: absolute;
+    content: "";
+    right: -100%;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--ColorBlack);
+    transition: .5s;
+}
+
+ul.menu a:hover::after {
+    right: 0%;
+}
+
+.ul.menu a:hover::before {
+    left: 0%;
+}
+
+
+ul.menu li {
+    font-size: 18px;
+    color: white;
+    margin-right: 0;
+    padding: 10px;
+    width: 100%;
+    transform: translateY(50px);
+    animation: fadeInUp 0s forwards 0s;
+    transition: all 0s ease;
+    opacity: 0;
+    animation-delay: 0s;
+}
+
+ul.menu li:hover {
+    color: #000;
+    transition: var(--TransitionHalfe);
+}
+
+.btn-menu {
+    width: 100%;
+    position: relative;
+}
+
+.btn-menu:hover ul.menu {
+    display: block;
+}
+
+/* ............................ End Navication ............................ */
+
+/* ............................ End Heder ............................ */
+
+/* ............................ Home ............................ */
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background: linear-gradient(180deg, #f8985b, #f89822); */
+    background: linear-gradient(180deg, #2296b3, #084560);
+    /* background: #f68946; */
+}
+
+.home-box {
+    padding: 10px;
+    width: 600px;
+    height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    background-color: var(--ColorWhite);
+    box-shadow: 0px 0px 7px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(50px) scale(1.5);
+    animation: fadeInUp 1s forwards 0.5s;
+    transition: all 0.3s ease;
+}
+
+.home-box:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    background-color: var(--ColorBlueOpen);
+}
+
+.home .home-cont {
+    text-align: center;
+    max-width: 40rem;
+}
+
+.home .home-cont h1 {
+    font-family: "Cairo", sans-serif;
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home .home-cont p {
+    font-size: 20px;
+}
+.home-box:hover p{
+    color: white;
+    transition: var(--TransitionHalfe);
+}
+
+.fac {
+    display: none;
+}
+
+/* ............................ End Home ............................ */
+
+/* ............................ serves ............................ */
+
+.services {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.services .hs2 {
+    width: 300px;
+    color: #000;
+    font-size: 3em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    color: #333;
+    /* opacity: 0; */
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards .5s;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.services .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .card {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 30px;
+    padding: 40px 30px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.services .card:hover.card::after {
+    bottom: 0;
+}
+
+.card:hover.card h2,
+.card:hover.card p {
+    color: var(--ColorWhite);
+    z-index: 2;
+    position: relative;
+}
+
+.services .card::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background: var(--ColorBlueOpen);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+
+.services .card:hover {
+    transform: translateY(-10px);
+    transition: var(--MainTransition);
+    box-shadow: 0 0 5px 3px var(--ColorBlueDark);
+}
+
+.services h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-family: var(--FontTahoma2);
+    color: #333;
+    font-size: 1.2em;
+}
+
+/* ............................ End serves ............................ */
+
+/* ............................ Why As? ............................ */
+
+#why-us {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#why-us .container {
+    max-width: 1200px;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+}
+
+
+#why-us .title-container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#why-us h2 {
+    font-size: 3em;
+    color: #333;
+    margin-top: 150px;
+    /* opacity: 0; */
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transform: translateY(50px);
+    animation: fadeInUp 1s forwards 0.5s;
+}
+#why-us p {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+#why-us .row {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#why-us .feature-box {
+    align-content: space-between;
+    flex: 1;
+    background-color: #e6f7ff;
+    padding: 30px;
+    margin: 0 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    /* transform: translateY(50px); */
+    /* opacity: 0; */
+    /* animation: fadeInUp 1s forwards 0.5s; */
+    position: relative;
+    overflow: hidden;
+}
+
+/* #why-us .feature-box::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background: var(--ColorBlueOpen);
+    width: 100%;
+    height: 100%;
+    transition: .4s;
+    z-index: 1;
+}
+
+#why-us .feature-box:hover.feature-box::after {
+    bottom: 0;
+}
+
+#why-us .feature-box:hover.feature-box i,
+#why-us .feature-box:hover.feature-box h3,
+#why-us .feature-box:hover.feature-box p {
+    color: var(--ColorWhite);
+    z-index: 2;
+    position: relative;
+}
+
+#why-us .feature-box:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transition: var(--MainTransition);
+    box-shadow: 0 0 5px 3px var(--ColorBlueDark);
+} */
+
+#why-us .feature-box:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transition: var(--MainTransition);
+    box-shadow: 0 0 5px 5px #ddd;
+}
+
+#why-us .feature-box i {
+    font-size: 3em;
+    color: #555;
+    margin-bottom: 20px;
+    display: block;
+    /* opacity: 0; */
+    /* transform: translateY(50px); */
+    animation: fadeInUp 1s forwards 0.7s;
+}
+
+#why-us .feature-box h3 {
+    font-size: 2em;
+    color: #555;
+    /* opacity: 0; */
+    /* transform: translateY(50px); */
+    animation: fadeInUp 1s forwards 0.9s;
+}
+
+
+#why-us .animated-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent);
+    z-index: -1;
+    overflow: hidden;
+}
+
+#why-us .animated-shape {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.7), transparent);
+    animation: animatedBackground 3s infinite;
+}
+
+/* ............................ End Why As ............................ */
+
+/* ............................ Footer ............................  */
+
+footer {
+    background-color: var(--ColorBlueOpen);
+    height: auto;
+    width: 100%;
+    font-family: "open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-family: var(--FontCairo);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    font-family: var(--FontTajawal);
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 18px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    padding-right: 0;
+}
+
+.socials a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s* var(--i));
+}
+
+.socials a i {
+    font-size: 2.1rem;
+    transition: color .4s case;
+}
+
+.footer-bottom {
+    background: var(--ColorBlueDark);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 18px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    font-size: 20px;
+    color: var(--ColorWhite);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+}
+
+.socials a:hover i:hover {
+    color: var(--ColorBlueDark);
+    transition: var(--TransitionHalfe);
+}
+
+.footer-bottom span:hover {
+    color: var(--ColorBlack);
+    transition: var(--TransitionHalfe);
+}
+
+.top {
+    color: var(--ColorBlack);
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+    background-color: var(--ColorBlueOpen);
+    transition: var(--MainTransition);
+    border-radius: 6px;
+    box-shadow: 0 0 3px var(--ColorBlueDark);
+}
+
+.top:hover {
+    color: var(--ColorWhite);
+    background-color: var(--ColorBlueDark);
+    box-shadow: 0 0 20px var(--ColorBlueDark);
+}
+
+.top i {
+    color: var(--mainColor1);
+    background: var(--mainColor);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+/* EndFooter  */
+/* ............................ Animation ............................ */
+
+
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes animatedBackground {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.slide-left {
+    animation: slideLeft 1s ease forwards;
+    opacity: 0;
+}
+
+.slide-right {
+    animation: slideRight 1s ease forwards;
+    opacity: 0;
+}
+
+.slide-bottom {
+    animation: slideBottom 1s ease forwards;
+    opacity: 0;
+}
+
+.slide-top {
+    animation: slideTop 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* ............................ End Animation ............................ */
+
+/* ............................ Media ............................  */
+
+/* ............................ Mobile ............................ */
+
+@media (max-width: 767px) {
+
+    .home-box {
+        width: 400px;
+    }
+
+    .home .home-cont h1 {
+        font-size: 35px;
+    }
+
+    .home .home-cont p {
+        font-size: 18px;
+    }
+
+    .services .card {
+        height: 100%;
+    }
+
+
+    .nav-fr .logo-name {
+        font-size: 23px;
+        margin-left: 10px;
+    }
+
+    nav {
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .nav-fr {
+        width: 80%;
+    }
+
+    .fac {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        width: 20%;
+        margin-right: 50px;
+        transition: var(--MainTransition);
+    }
+
+    .fa-bars:hover {
+        color: white;
+    }
+
+    .nav-la {
+        box-shadow: -1px 0 30px rgba(0, 0, 0, .1);
+        background: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* width: 200px; */
+        width: 35%;
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        transition: .5s;
+    }
+
+    .nav-la li {
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .nav-la li a {
+        font-size: 22px;
+        color: var(--ColorBlueDark);
+        transition: .3s linear;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .nav-la li a::before {
+        position: absolute;
+        content: "";
+        left: -100%;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: var(--ColorBlueDark);
+        transition: .5s;
+    }
+
+    .nav-la li a::after {
+        position: absolute;
+        content: "";
+        right: -100%;
+        bottom: 0;
+        height: 3px;
+        width: 100%;
+        background-color: var(--ColorBlueDark);
+        transition: .5s;
+    }
+
+    .nav-la li a:hover {
+        color: var(--ColorWhite);
+        background-color: var(--ColorBlueOpen);
+    }
+
+
+    .btn-menu {
+        width: 100%;
+        position: relative;
+    }
+
+    .btn-menu:hover ul.menu {
+        display: block;
+        text-align: center;
+        margin-left: 100px;
+        background-color: var(--ColorBlueOpen);
+        width: 100%;
+        z-index: 999;
+        position: absolute;
+    }
+
+    ul.menu li {
+        padding: 9px;
+        margin-bottom: 0;
+        color: var(--ColorBlack);
+    }
+
+    ul.menu li:hover {
+        color: var(--ColorWhite);
+    }
+
+    nav ul .fac {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
+
+/* ............................ Small Screens ............................ */
+@media (min-width: 768px) {}
+
+/* ............................ Medium Screens ............................ */
+
+@media (min-width: 992px) {}
+
+/* ............................ Large Screens ............................ */
+
+@media (min-width: 1200px) {}
+
+/* ............................ End Media ............................  */

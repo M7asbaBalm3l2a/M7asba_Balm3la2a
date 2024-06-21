@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>محاسبة بالمعلقة</title>
+        <link rel="shortcut icon" href="Imgs/logo/Logo-Title.png">
+        <!-- Font Cairo -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Tajawal -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <!-- Style File -->
+        <link rel="stylesheet" href="CSS/css.css" />
+        <!-- Normaliz File -->
+        <link rel="stylesheet" href="CSS/normaliz.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="continar">
+                <!-- Naviction -->
+                <nav id="navbar">
+                    <ul class="nav-fr">
+                        <li style="--i: 1">
+                            <a href="index.html" class="logo-name"
+                                >محاسبة بالمعلقة</a
+                            >
+                        </li>
+                        <li style="--i: 2">
+                            <a href="index.html" class="logo-img"
+                                ><img src="Imgs/logo/logo.png" alt="Not found"
+                            /></a>
+                        </li>
+                    </ul>
+                    <ul class="nav-la" id="menu">
+                        <li style="--i: 3">
+                            <a href="index.html" class="bton"
+                                >الصفحة الرئيسية</a
+                            >
+                        </li>
+                        <li style="--i: 4" class="btn-menu">
+                            <a href="#">▾ الاقسام</a>
+                            <ul class="menu">
+                                <a
+                                    href="Files/List/Terms/index.html"
+                                    target="_blank"
+                                    ><li>النظري</li></a
+                                >
+                                <a
+                                    href="Files/List/Exampls/index.html"
+                                    target="_blank"
+                                    ><li>الأمثلة</li></a
+                                >
+                                <a
+                                    href="Files/List/Tests/index.html"
+                                    target="_blank"
+                                    ><li>التمارين</li></a
+                                >
+                            </ul>
+                        </li>
+                        <li style="--i: 5">
+                            <a href="Files/TeamStone/index.html" target="_blank"
+                                >من نحن</a
+                            >
+                        </li>
+                        <li style="--i: 6"><a href="#home">تواصل معنا</a></li>
+                        <i
+                            class="fac fa-solid fa-circle-xmark"
+                            onclick="closemenu()"
+                        ></i>
+                    </ul>
+                    <i class="fac fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <!-- EndNaviction -->
+            </div>
+        </header>
+        <!-- End Header -->
+        <!-- Home -->
+        <section class="home" id="home">
+            <!--  -->
+            <div class="home-cont">
+                <div class="home-box">
+                    <h1>محاسبة بالمعلقة</h1>
+                    <p>
+                        نسعي لتوفير محتوي تعليمي إلكتروني منهجي، وتسهيل فهم
+                        المفاهيم المحاسبية بالإضافة الي تقديم تمارين وحلول
+                        لتطبيق العلم النظري علي الواقع العملي
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- EndHome -->
+
+        <!-- services -->
+
+        <section class="services">
+            <h2 class="hs2">ماذا نقدم؟</h2>
+            <div class="cards-container">
+                <a href="Files/List/Terms/index.html"
+                target="_blank"  class="slide-left card">
+                    <h2>قسم النظري</h2>
+                    <p>
+                        تعرف على المفاهيم المحاسبية الأساسية والنظريات التي
+                        تدعمها.
+                    </p>
+                </a>
+                <a href="Files/List/Exampls/index.html"
+                target="_blank" class="slide-top card">
+                    <h2>قسم الأمثلة</h2>
+                    <p>
+                        استعرض الأمثلة العملية التي توضح تطبيق المفاهيم
+                        المحاسبية في الواقع.
+                    </p>
+                </a>
+                <a href="Files/List/Tests/index.html"
+                target="_blank" class="slide-right card">
+                    <h2>قسم التمارين</h2>
+                    <p>
+                        اختبر معرفتك وقدراتك في المحاسبة من خلال التمارين
+                        العملية.
+                    </p>
+                </a>
+            </div>
+        </section>
+
+        <!-- End services -->
+
+        <!-- Why As? -->
+
+        <section id="why-us">
+            <div class="container">
+                <div class="title-container">
+                    <h2>لماذا نحن؟</h2>
+                </div>
+                <div class="row">
+                    <div class="feature-box slide-left">
+                        <i class="fas fa-users"></i>
+                        <h3>خبرة متميزة</h3>
+                        <p>
+                            نقدم لك خبرة متميزة في المحاسبة المالية من خلال فريق
+                            متخصص ومحترف.
+                        </p>
+                    </div>
+                    <div class="feature-box slide-top">
+                        <i class="fas fa-book-open"></i>
+                        <h3>محتوى غني ومتنوع</h3>
+                        <p>
+                            نقدم لك محتوى غني ومتنوع يغطي جميع جوانب المحاسبة
+                            المالية لتعزيز مهاراتك ومعرفتك.
+                        </p>
+                    </div>
+                    <div class="feature-box slide-right">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>تعليم عملي</h3>
+                        <p>
+                            نحرص على تقديم تعليم عملي وتطبيقي يساعدك في تطوير
+                            مهاراتك وتحقيق أهدافك المهنية.
+                        </p>
+                    </div>
+                </div>
+                <div class="animated-bg">
+                    <div class="animated-shape"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Why As? -->
+
+        <!-- Footer -->
+        <section class="continer">
+            <footer>
+                <div class="footer-content">
+                    <h3>محاسبة بالمعلقة</h3>
+                    <p>
+                        نسعي لتوفير محتوي تعليمي إلكتروني منهجي، وتسهيل فهم
+                        المفاهيم المحاسبية بالإضافة الي تقديم تمارين وحلول
+                        لتطبيق العلم النظري علي الواقع العملي
+                    </p>
+                    <h3>تواصل معنا !</h3>
+                    <div class="socials">
+                        <a style="--i: 10" href="#"
+                            ><i class="fa fa-brands fa-facebook-f"></i
+                        ></a>
+                        <a style="--i: 9" href="https://wa.me/+201060819188"
+                            ><i class="fa fa-brands fa-whatsapp"></i
+                        ></a>
+                        <a style="--i: 8" href="#"
+                            ><i class="fa fa-regular fa-envelope"></i
+                        ></a>
+                        <a style="--i: 7" href="#"
+                            ><i class="fa fa-brands fa-telegram"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        تم تصميم موقع محاسبة بالمعلقة بواسطة
+                        <a href="Files/TeamStone/index.html"
+                            ><span>TeamStone</span></a
+                        >
+                    </p>
+                </div>
+            </footer>
+        </section>
+        <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+        <script src="JS/script.js"></script>
+    </body>
+</html>

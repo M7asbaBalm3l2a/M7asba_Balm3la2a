@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محاسبة بالمعلقة | الأمثلة</title>
+    <!-- Font Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <!-- Font Tajawal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <!-- Style File -->
+    <link rel="stylesheet" href="CSS/css.css">
+    <!-- Normaliz File -->
+    <link rel="stylesheet" href="CSS/normaliz.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <!-- Naviction -->
+        <nav id="navbar">
+            <ul class="nav-fr">
+                <li><a href="../../../index.html" class="logo-name">محاسبة بالمعلقة</a></li>
+                <li><a href="../../../index.html" class="logo-img"><img src="Imgs/logo/logo.png" alt="Not found"></a></li>
+            </ul>
+            <ul class="nav-la" id="menu">
+                <li><a href="../../../index.html">الصفحة الرئيسية</a></li>
+                <li class="btn-menu">
+                    <a href="#home">▾ الاقسام</a>
+                    <ul class="menu">
+                        <a href="../Terms/index.html"><li>النظري</li></a>
+                        <a href="../Exampls/index.html"><li>الأمثلة</li></a>
+                        <a href="../Tests/index.html"><li>التمارين</li></a>
+                    </ul>
+                </li>
+                <li><a href="../../TeamStone/index.html" target="_blank">من نحن</a></li>
+                <li><a href="#footer">تواصل معنا</a></li>
+                <i
+                class="fac fa-solid fa-circle-xmark"
+                onclick="closemenu()"
+            ></i>
+            </ul>
+            <i class="fac fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <!-- EndNaviction -->
+    </header>
+    <!-- End Header -->
+    <!-- Home -->
+    <section class="title-page">
+        <div class="big-title">
+            <h1>قسم الأمثلة</h1>
+        </div>
+    </section>
+    <section class="continer">
+        <div class="aside asideWidth" id="aside">
+            <h5>قسم الأمثلة</h5>
+            <ul class="menu-side">
+                <li><a href="#home">قائمةالدخل</a></li>
+                <li><a href="#home2">قائمة التغيرات في حقوق الملكية</a></li>
+                <li><a href="#home3">قائمة المركز المالي (الميزانية)</a></li>
+            </ul>
+        </div>
+        <div class="page">
+            <hr />
+            <div class="term">
+                <p  id="home">
+                    <strong>استعرض الأمثلة العملية التي توضح تطبيق المفاهيم المحاسبية في الواقع.</strong>
+                </p>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>قائمة الدخل</h2>
+                <dl>
+                    <dt>تهدف هذه القائمة إلي قياس صافي الدخل للمنشاة عن فترة مالية معينة ، من خلال المقابلة بين : </dt>
+                    <dd><ul>
+                        <li>الايرادات والمكاسب من ناحية</li>
+                        <li>المصروفات والخسائر من ناحية أخرى</li>
+                    </ul></dd>
+                    <dt>يتم الوصول الى صافي الدخل باستخدام هذه الطريقة عبر عدة مراحل كالتالي :</dt>
+                    <dt>1.	استخراج مجمل الدخل (مجمل ربح او مجمل خسارة) :</dt>
+                    <dd>مجمل الدخل يمثل الفرق بين الايرادات وبين تكلفة الايرادات ان وجدت، والنتيجة اما مجمل ربح او مجمل خسارة.<br>
+                        مجمل الدخل = الايرادات – تكلفة الايرادات (تكلفة المبيعات )
+                    </dd>
+                    <dt>2.	استخراج الدخل من العمليات التشغيلية :</dt>
+                    <dd>الدخل من العمليات التشغيلية تمثل الفرق بين مجمل الدخل وبين المصروفات التشغيلية<br>
+                        الدخل التشغيلي = مجمل الدخل – المصروفات التشغيلية
+                        </dd>
+                    <dt>3.	استخراج صافي الدخل قبل الضريبة (صافي الربح او صافي الخسارة) :</dt>
+                    <dd>بعد استخراج صافي الدخل من العمليات التشغيلية يتم اضافة الايرادات الاخرى (غير العادية) وخصم المصروفات الاخرى (غير العادية) للوصول الى صافي الدخل قبل الضريبة.<br>
+                        صافي الدخل قبل الضريبة = الدخل من العمليات التشغيلية + الايرادات الاخرى – المصروفات الاخرى
+                        </dd>
+                    <dt>4.	استخراج صافي الدخل بعد الضريبة (صافي الربح او صافي الخسارة) :</dt>
+                    <dd>ان كانت القوانين في الدولة تفرض على المنشأة ضريبة دخل بنسبة معينة فعند ذلك يتم خصم قيمة الضريبة المستحقة من صافي دخل الفترة وذلك لاستخراج صافي الدخل المتحقق بعد خصم الضريبة (ربح او خسارة) .<br>
+                        صافي الدخل بعد الضريبة = صافي الدخل قبل الضريبة – ضريبة الدخل المستحقة
+                        </dd>
+                </dl>
+                <!-- <dl>
+                    <dt>أهداف قائمة الدخل:</dt>
+                    <dd>توضيح أداء الشركة المالي خلال فترة معينة. <br>
+                        تحديد الربحية من الأنشطة التشغيلية وغير التشغيلية. <br>
+                        تقديم معلومات للمستخدمين حول قدرة الشركة على توليد الإيرادات والسيطرة على المصروفات.</dd>
+                    <dt>خطوات إعداد قائمة الدخل:</dt>
+                    <dt>جمع البيانات المالية:</dt>
+                    <dd>احصل على جميع الإيرادات والمصروفات للفترة المالية.</dd>
+                    <dt>تصنيف الإيرادات:</dt>
+                    <dd>إجمالي المبيعات (صافي المبيعات بعد الخصومات والمردودات).</dd>
+                    <dt>حساب تكلفة البضائع المباعة :</dt>
+                    <dd>احسب تكلفة الإنتاج أو الشراء للبضائع التي بيعت خلال الفترة.</dd>
+                    <dt>حساب الربح الإجمالي :</dt>
+                    <dd>الربح الإجمالي = صافي المبيعات - تكلفة البضائع المباعة.</dd>
+                    <dt>تصنيف المصروفات التشغيلية :</dt>
+                    <dd>تشمل المصروفات الإدارية، التسويقية، والتشغيلية.</dd>
+                    <dt>حساب الربح التشغيلي :</dt>
+                    <dd>الربح التشغيلي = الربح الإجمالي - المصروفات التشغيلية.</dd>
+                    <dt>إدراج الإيرادات والمصروفات غير التشغيلية :</dt>
+                    <dd>تشمل الإيرادات الأخرى والفوائد والضرائب.</dd>
+                    <dt>حساب صافي الربح :</dt>
+                    <dd>صافي الربح = الربح التشغيلي + الإيرادات الأخرى - المصروفات الأخرى.</dd>
+                </dl> -->
+            </div>
+            <hr>
+            <div class="term">
+                <h2>شكل يوضح قائمه الدخل:</h2><br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>إجمالي الإيرادات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">(Xx)</td>
+                            <td> – المسحوبات (Xx*Xx%)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td>صافي الإيرادات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td>– المصروفات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td>مثل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>اجور ومرتبات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>ايجارات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>نور ومياه</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>إعلانات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>تليفون وفاكس</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>مصروفات عمومية وإدارية</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">Xx</td>
+                            <td>فوائد مدينة</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">(Xx)</td>
+                            <td class="center"></td>
+                            <td>إجمالي المصاريف</td>
+                        </tr>
+                        <tr>
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td>صافي الربح قبل الضريبة</td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">(Xx)</td>
+                            <td class="center"></td>
+                            <td>– ضريبة الدخل (Xx*Xx%)</td>
+                        </tr>
+                        <tr>
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td>صافي الربح العام</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>(مثال 1) علي قائمه الدخل:</h2>
+                <p><strong>فيما يلي أرصدة الإيرادات والمصروفات لمنشأة سلمي عن سنة 2011 :</strong></p>
+                <p> 1.الإيرادات 1000000ج ، والمسموحات 10% من الإيرادات. <br>
+                    2.المصروفات (أجور ومرتبات 50000ج – إيجارات 20000ج – نور ومياه 5000ج – إعلانات 20000ج – تليفون وفاكس 5000ج – مصروفات إدارية وعمومية 100000ج – فوائدمدينة10000ج). <br>
+                    3.معدل ضريبة الدخل 20%.
+                </p>
+                <p><strong>والمطلوب : إعداد قائمة الدخل لمنشأة سلمي عن سنة 2011.</strong></p>
+                <p><strong>الحل</strong></p>
+                <table>
+                    <tbody>
+                        <tr><td></td><td class="center">1000000</td><td>إجمالي الإيرادات</td></tr>
+                        <tr><td></td><td class="center border-bottom">(100000)</td><td> – المسحوبات (1000000*10%)</td></tr>
+                        <tr><td></td><td class="center"></td><td></td></tr>
+                        <tr><td>900000</td><td class="center"></td><td>صافي الإيرادات</td></tr>
+                        <tr><td></td><td class="center"></td><td>– المصروفات</td></tr>
+                        <tr><td></td><td class="center">50000</td><td>اجور ومرتبات</td></tr>
+                        <tr><td></td><td class="center">20000</td><td>ايجارات</td></tr>
+                        <tr><td></td><td class="center">5000</td><td>نور ومياه</td></tr>
+                        <tr><td></td><td class="center">20000</td><td>إعلانات</td></tr>
+                        <tr><td></td><td class="center">5000</td><td>تليفون وفاكس</td></tr>
+                        <tr><td></td><td class="center">100000</td><td>مصروفات عمومية وإدارية</td></tr>
+                        <tr><td></td><td class="center border-bottom">10000</td><td>فوائد مدينة</td></tr>
+                        <tr><td></td><td class="center"></td><td></td></tr>
+                        <tr><td class="border-bottom">(210000)</td><td class="center"></td><td>إجمالي المصاريف</td></tr>
+                        <tr><td>690000</td><td class="center"></td><td>صافي الربح قبل الضريبة</td></tr>
+                        <tr><td class="border-bottom">(138000)</td><td class="center"></td><td>– ضريبة الدخل (690000*20%)</td></tr>
+                        <tr><td>552000</td><td class="center"></td><td>صافي الربح العام</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>(مثال 2) علي قائمه الدخل:</h2>
+                <p><strong>بلغت ايرادات التي حصلت عليها منشاة المستقبل لتكنولوجيا المعلومات علي : </strong></p>
+                <p>(مبيعات حاسبات الية 300000ج – مبيعات قطع غيار أجزاء من الحاسبات الآلية 50000ج – إيرادات صيانة 30000ج – إيرادات دورات تدريبية 100000ج – إيرادات خدمات الإنترنت 10000ج)
+                    <br>
+                    <p><strong>قامت المنشأة بسداد المصروفات التالية : </strong></p>
+                    (مشتريات مكونات الحاسبات الألية 20000ج – ايجار المكان 12000ج – أجور ومرتبات 50000ج – مياة والكهرباء 5000ج –
+                    إعلانات 20000ج – فاتورة الشركة المصرية للإتصالات 40000ج – مصروفات عمومية وإدارية10000ج)
+                </p>
+                <p><strong>والمطلوب : إعداد قائمة الدخل لمنشأة المستقبل.</strong></p>
+                <p class="center-p"><strong>الحل</strong></p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td>أولا : الإيرادات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">300000</td>
+                            <td>مبيعات حاسبات ألية</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">50000</td>
+                            <td>مبيعات قطع غيار</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">30000</td>
+                            <td>إيرادات صيانة</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">100000</td>
+                            <td>إيرادات دورات تدريبية</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">10000</td>
+                            <td>إيرادات خدمات الإنترنت</td>
+                        </tr>
+                        <tr>
+                            <td>490000</td>
+                            <td class="center"></td>
+                            <td>إجمالي الإيرادات</td>
+                        </tr>
+                        <tr class="top">
+                            <td></td>
+                            <td class="center"></td>
+                            <td>ثانيا : المصروفات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">200000</td>
+                            <td>مشتريات مكونات الحاسبات الألية</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">12000</td>
+                            <td>إيجار المكان</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">50000</td>
+                            <td>أجور ومرتبات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">5000</td>
+                            <td>مياة وكهرباء</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">20000</td>
+                            <td>إعلانات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">40000</td>
+                            <td>فاتورة الشركة المصرية للإتصالات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">10000</td>
+                            <td>مصروفات عمومية وإدارية</td>
+                        </tr>
+                        <tr id="home2">
+                            <td>(337000)</td>
+                            <td class="center"></td>
+                            <td>إجمالي المصروفات</td>
+                        </tr>
+                        <tr class="top">
+                            <td>153000</td>
+                            <td class="center"></td>
+                            <td>صافي الربح</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>قائمة التغيرات في حقوق الملكية</h2>
+                <dl>
+                    <dt>تهدف هذة القائمة الي توضيح التغيرات التي تحدث في حقوق الملكية خلال العام لمعرفة حقوق الملكية اخر الفترة ، يتم اعدادها من خلال المعادلة التالية : </dt>
+                    <dt>حقوق الملكية أول الفترة المالية</dt>
+                    <dd>– يتم اضافة الزيادة في رأس المال خلال الفترة</dd>
+                    <dd>– بعد ذلك يتم اضافة صافي الدخل او صافي ربح العام</dd>
+                    <dt>بعد ذلك يتم خصم منه الاتي :</dt>
+                    <dd>– المسحوبات</dd>
+                    <dd>– صافي الخسارة ان وجد</dd>
+                    <dt>سوف يعطي في الاخر حقوق الملكية في نهاية الفترة المالية</dt>
+                </dl>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>شكل يوضح قائمة التغيرات في حقوق الملكية</h2><br>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td>حقوق الملكية في بداية الفترة</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">يضاف إليها</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>الزيادة في رأس المال</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">Xx</td>
+                            <td>صافي الربح العام</td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">Xx</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">يخصم منها:</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>المسحوبات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">Xx</td>
+                            <td>صافي الخسارة</td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">(Xx)</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="top border-bottom">
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td>حقوق الملكية في نهاية الفترة</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>(مثال 1) علي قائمة التغيرات في حقوق الملكية</h2>
+                <p>في أول يناير 2011 بدأت محلات ياسمين خيري برأس مال 400000ج ، وفي 2001/7/1
+                    تم زيادة رأس المال بمبلغ 100000ج نقدآ ، وفي 2001/9/1 سحبت لاستعمالها الشخصي بضائع بمبلغ 5000ج ، وفي 2011/12/31 بلغت الأرباح عن العام 100000ج.
+                    </p>
+                <p><strong>والمطلوب : إعداد قائمة التغير في حقوق الملكية.</strong></p>
+                <p class="center-p"><strong>الحل</strong></p>
+                <table>
+                    <tbody>
+                        <tr><td>400000</td><td class="center"></td><td>حقوق الملكية في 2011/1/1</td></tr>
+                        <tr><td></td><td class="center"></td><td class="underline">يضاف إليها:</td></tr>
+                        <tr><td></td><td class="center">100000</td><td>الزيادة في رأس المال</td></tr>
+                        <tr><td></td><td class="center border-bottom">100000</td><td>صافي الربح العام</td></tr>
+                        <tr><td class="border-bottom">200000</td><td class="center"></td><td></td></tr>
+                        <tr><td>600000</td><td class="center"></td><td></td></tr>
+                        <tr><td></td><td class="center"></td><td class="underline">يخصم منها:</td></tr>
+                        <tr><td></td><td class="center border-bottom">5000</td><td>المسحوبات</td></tr>
+                        <tr><td>(5000)</td><td class="center"></td><td></td></tr>
+                        <tr class="top border-bottom"><td>595000</td><td class="center"></td><td>حقوق الملكية في 2011/12/31</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>(مثال 2) علي قائمة التغيرات في حقوق الملكية</h2>
+                <p>في أول يناير 2021 بدأت محلات ياسمين سيف برأس مال 450000ج ، وفي 2017/7/1
+                    تم زيادة رأس المال بمبلغ 150000ج نقدآ ، وفي 2015/9/1 سحبت لاستعنالها الشخصي بضائع بمبلغ 50000ج ، وفي 2021/12/31 بلغت الأرباح عن العام 150000ج..
+                    </p>
+                <p><strong>والمطلوب : إعداد قائمة التغير في حقوق الملكية.</strong></p>
+                <p class="center-p"><strong>الحل</strong></p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>450000</td>
+                            <td class="center"></td>
+                            <td>حقوق الملكية في 2021/1/1</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">يضاف إليها</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">150000</td>
+                            <td>الزيادة في رأس المال</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">150000</td>
+                            <td>صافي الربح العام</td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">300000</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>750000</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">يخصم منها:</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">50000</td>
+                            <td>المسحوبات</td>
+                        </tr>
+                        <tr id="home3">
+                            <td class="border-bottom">(50000)</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr class="top border-bottom">
+                            <td>700000</td>
+                            <td class="center"></td>
+                            <td>حقوق الملكية في 2021/12/31</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>قائمة المركز المالي (الميزانية)</h2>
+                <dl>
+                    <dt>اهداف الميزانية العمومية</dt>
+                    <dd>تقديم لمحة عن الوضع المالي للشركة في نقطة زمنية معينة. <br>
+                        تحديد قدرة الشركة على الوفاء بالتزاماتها قصيرة وطويلة الأجل.<br>
+                        عرض موارد الشركة (الأصول) والمصادر التي تم تمويلها منها (الخصوم وحقوق الملكية).</dd>
+                    <dt>خطوات حل الميزانية العمومية</dt>
+                    <dt>جمع البيانات المالية:</dt>
+                    <dd>اجمع جميع المعلومات المتعلقة بالأصول والخصوم وحقوق الملكية من السجلات المالية للشركة.</dd>
+                    <dt>تصنيف الأصول:</dt>
+                    <dd>
+                        <strong>الأصول الثابتة :</strong> تشمل الممتلكات، الآلات، المعدات، وغيرها <br>
+                        <strong>الأصول المتداولة: </strong>تشمل النقدية، المدينين، المخزون، المصروفات المدفوعة مقدماً، وغيرها. <br>
+                        <strong>الأصول غير الملموسة:</strong>  تشمل الشهرة، براءات الاختراع، العلامات التجارية، الإمتيازات، وغيرها</dd>
+                    <dt>تصنيف الخصوم:</dt>
+                    <dd><strong>الخصوم المتداولة:</strong>تشمل الدائنين، القروض قصيرة الأجل، المصروفات المستحقة، وغيرها. <br>
+                        <strong>الخصوم غير المتداولة:</strong> تشمل القروض طويلة الأجل، الالتزامات المستحقة بعد سنة، وغيرها.</dd>
+                    <dt>حساب حقوق الملكية:</dt>
+                    <dd>تشمل رأس المال المدفوع، الأرباح المحتجزة، الاحتياطيات.</dd>
+                </dl>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>شكل يوضح قائمة المركز المالي (الميزانية)</h2>
+                <table class="width exam">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">الأصول الثابتة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">حقوق الملكية</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>أراضي</td>
+                            <td class="center"></td>
+                            <td class="center">Xx</td>
+                            <td>رأس المال</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>مباني</td>
+                            <td class="center"></td>
+                            <td class="center">Xx</td>
+                            <td>± صافي الربح</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>سيارات</td>
+                            <td class="center"></td>
+                            <td class="center border-bottom">Xx</td>
+                            <td>– المسحوبات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">Xx</td>
+                            <td>أثاث</td>
+                            <td class="center">Xx</td>
+                            <td class="center"></td>
+                            <td>إجمالي حقوق الملكية</td>
+                        </tr>
+                        <tr>
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول الثابتة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">خصوم طويلة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td class="center"></td>
+                            <td>قروض طويلة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">الأصول المتداولة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">خصوم متداولة</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>نقدية</td>
+                            <td class="center"></td>
+                            <td class="center">Xx</td>
+                            <td>موردين</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>مخزون</td>
+                            <td class="center"></td>
+                            <td class="center">Xx</td>
+                            <td>أوراق دفع</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>عملاء</td>
+                            <td class="center"></td>
+                            <td class="center border-bottom">Xx</td>
+                            <td>قروض قصيرة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">Xx</td>
+                            <td>أوراق قبض</td>
+                            <td class="center border-bottom">Xx</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">Xx</td>
+                            <td>أوراق مالية</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">Xx</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول المتداولة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Xx</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول</td>
+                            <td class="center">Xx</td>
+                            <td class="center"></td>
+                            <td>مجموع الخصوم وحقوق الملكية</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>(مثال 1) علي قائمة قائمة المركز المالي (الميزانية)</h2>
+                <p><strong>فيما يلي بعض أرصدة ميزان المراجعة لمنشأة عزت في 2011/12/31</strong></p>
+                <p>(أراضي 100000ج – مباني 50000ج - سيارات 50000ج – أثاث 20000ج – نقدية 30000ج
+                    – مخزون بضاعة 50000ج – عملاء 50000ج – أوراق قبض 30000 – أوراق مالية 20000ج 
+                    – موردين 20000ج – أوراق دفع 20000ج – قروض قصيرة الأجل 10000ج 
+                    – قروض طويلة الأجل 50000ج – المسحوبات 10000ج – صافي ربح العام 20000ج – رأس المال 290000ج.)
+                </p>
+                <p><strong>والمطلوب : إعداد قائمة المركز المالي في 2011/12/31.</strong></p>
+                <p class="center-p"><strong>الحل</strong></p>
+                <table class="width">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">الأصول الثابتة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">حقوق الملكية</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">100000</td>
+                            <td>أراضي</td>
+                            <td class="center"></td>
+                            <td class="center">290000</td>
+                            <td>رأس المال</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">50000</td>
+                            <td>مباني</td>
+                            <td class="center"></td>
+                            <td class="center">20000</td>
+                            <td>± صافي الربح</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">50000</td>
+                            <td>سيارات</td>
+                            <td class="center"></td>
+                            <td class="center border-bottom">(10000)</td>
+                            <td>– المسحوبات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">20000</td>
+                            <td>أثاث</td>
+                            <td class="center">300000</td>
+                            <td class="center"></td>
+                            <td>إجمالي حقوق الملكية</td>
+                        </tr>
+                        <tr>
+                            <td>220000</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول الثابتة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">خصوم طويلة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td></td>
+                            <td class="center">50000</td>
+                            <td class="center"></td>
+                            <td>قروض طويلة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">الأصول المتداولة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">خصوم متداولة</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">30000</td>
+                            <td>نقدية</td>
+                            <td class="center"></td>
+                            <td class="center">20000</td>
+                            <td>موردين</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">50000</td>
+                            <td>مخزون</td>
+                            <td class="center"></td>
+                            <td class="center">20000</td>
+                            <td>أوراق دفع</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">50000</td>
+                            <td>عملاء</td>
+                            <td class="center"></td>
+                            <td class="center border-bottom">10000</td>
+                            <td>قروض قصيرة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">30000</td>
+                            <td>أوراق قبض</td>
+                            <td class="center border-bottom">50000</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">20000</td>
+                            <td>أوراق مالية</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">180000</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول المتداولة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>400000</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول</td>
+                            <td class="center">400000</td>
+                            <td class="center"></td>
+                            <td>مجموع الخصوم وحقوق الملكية</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="term">
+                <h2>(مثال 2) علي قائمة قائمة المركز المالي (الميزانية)</h2>
+                <p><strong>فيما يلي بعض أرصدة ميزان المراجعة لمنشأة طارق في 2012/12/31</strong></p>
+                <p>(أراضي 1000000ج – مباني 500000ج - سيارات 500000ج – أثاث 200000ج – نقدية 300000ج
+                    – مخزون بضاعة 500000ج – عملاء 500000ج – أوراق قبض 300000 – أوراق مالية 200000ج 
+                    – موردين 200000ج – أوراق دفع 200000ج – قروض قصيرة الأجل 100000ج 
+                    – قروض طويلة الأجل 500000ج – المسحوبات 100000ج – صافي ربح العام 200000ج – رأس المال 2900000ج.)
+                </p>
+                <p><strong>والمطلوب : إعداد قائمة المركز المالي في 2012/12/31.</strong></p>
+                <p class="center-p"><strong>الحل</strong></p>
+                <table class="width">
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">الأصول الثابتة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">حقوق الملكية</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">1000000</td>
+                            <td>أراضي</td>
+                            <td class="center"></td>
+                            <td class="center">2900000</td>
+                            <td>رأس المال</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">500000</td>
+                            <td>مباني</td>
+                            <td class="center"></td>
+                            <td class="center">200000</td>
+                            <td>± صافي الربح</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">500000</td>
+                            <td>سيارات</td>
+                            <td class="center"></td>
+                            <td class="center border-bottom">(100000)</td>
+                            <td>– المسحوبات</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">200000</td>
+                            <td>أثاث</td>
+                            <td class="center">3000000</td>
+                            <td class="center"></td>
+                            <td>إجمالي حقوق الملكية</td>
+                        </tr>
+                        <tr>
+                            <td>2200000</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول الثابتة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">خصوم طويلة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td></td>
+                            <td class="center">500000</td>
+                            <td class="center"></td>
+                            <td>قروض طويلة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center"></td>
+                            <td class="underline">الأصول المتداولة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td class="underline">خصوم متداولة</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">300000</td>
+                            <td>نقدية</td>
+                            <td class="center"></td>
+                            <td class="center">200000</td>
+                            <td>موردين</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">500000</td>
+                            <td>مخزون</td>
+                            <td class="center"></td>
+                            <td class="center">200000</td>
+                            <td>أوراق دفع</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">500000</td>
+                            <td>عملاء</td>
+                            <td class="center"></td>
+                            <td class="center border-bottom">100000</td>
+                            <td>قروض قصيرة الأجل</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center">300000</td>
+                            <td>أوراق قبض</td>
+                            <td class="center border-bottom">500000</td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="center border-bottom">200000</td>
+                            <td>أوراق مالية</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="border-bottom">1800000</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول المتداولة</td>
+                            <td class="center"></td>
+                            <td class="center"></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>4000000</td>
+                            <td class="center"></td>
+                            <td>مجموع الأصول</td>
+                            <td class="center">4000000</td>
+                            <td class="center"></td>
+                            <td>مجموع الخصوم وحقوق الملكية</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+        </div>
+    <!-- End Home -->
+    </section>
+    <section class="continer">
+        <footer>
+            <div class="footer-content">
+                <h3>محاسبة بالمعلقة</h3>
+                <p>
+                    نسعي لتوفير محتوي تعليمي إلكتروني منهجي، وتسهيل فهم المفاهيم
+                    المحاسبية بالإضافة الي تقديم تمارين وحلول لتطبيق العلم
+                    النظري علي الواقع العملي
+                </p>
+                <h3>تواصل معنا !</h3>
+                <ul class="socials">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://wa.me/01091043572"><i class="fa-brands fa-whatsapp"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            ><i class="fa-brands fa-telegram"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+            <div  id="footer" class="footer-bottom">
+                <p>
+                    تم تصميم موقع محاسبة بالمعلقة بواسطة
+                    <span>TeamStone</span>
+                </p>
+            </div>
+        </footer>
+    </section>
+    <script src="JS/script.js"></script>
+</body>
+</html>

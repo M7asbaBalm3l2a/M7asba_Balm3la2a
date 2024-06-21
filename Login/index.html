@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>محاسبة بالمعلقة | تسجيل الدخول</title>
+        <!-- Font Cairo -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Tajawal -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Style File -->
+        <link rel="stylesheet" href="CSS/css.css" />
+        <!-- Font Awsome -->
+        <link rel="stylesheet" href="CSS/all.min.css" />
+        <!-- Normaliz File -->
+        <link rel="stylesheet" href="CSS/normaliz.css" />
+    </head>
+    <body>
+        <!-- Header -->
+        <!-- id="header" -->
+        <header class="header" id="header">
+            <!-- Naviction -->
+            <nav id="navbar">
+                <ul class="nav-fr">
+                    <li><a href="#" class="logo-name">محاسبة بالمعلقة</a></li>
+                    <li>
+                        <a href="#" class="logo-img"
+                            ><img src="Imgs/logo/logo.png" alt="Not found"
+                        /></a>
+                    </li>
+                </ul>
+                <ul class="nav-la">
+                    <li>
+                        <a href="../TeamStone/index.html" target="_blank"
+                            >من نحن</a
+                        >
+                    </li>
+                    <li><a href="#home">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <!-- EndNaviction -->
+        </header>
+        <!-- End Header -->
+        <section>
+            <div class="home" >
+                <div class="wrapper">
+                    <!-- <span class="icon-close"
+                        ><ion-icon name="close"></ion-icon
+                    ></span> -->
+                    <div class="form-box login">
+                        <h2>دخول الطلاب</h2>
+                        <div class="alert alert-danger" role="alert">
+                            معلومات دخول خاطئة
+                        </div>
+                        <div class="alert alert-success" role="alert">
+                            تم تسجيل الدخول بنجاح، جاري تحويلك الآن
+                        </div>
+                        <form action="#">
+                            <div class="input-box">
+                                <input type="email" id="user" required />
+                                <span class="icon"
+                                    ><i class="fa-solid fa-user"></i
+                                ></span>
+                                <label>الرقم القومي</label>
+                            </div>
+                            <!-- <hr class="line1" /> -->
+                            <div class="input-box">
+                                <input type="password" id="password" required />
+                                <span class="icon"
+                                    ><i class="fa-solid fa-lock"></i
+                                ></span>
+                                <label>كلمة المرور</label>
+                            </div>
+                            <!-- <hr class="line2" /> -->
+                            <div class="remember-forgot">
+                                <!-- <label><input type="checkbox" />تذكرني</label> -->
+                                <!-- <a href="#">هل نسيت كلمة المرور؟</a> -->
+                            </div>
+                            <button
+                                type="button"
+                                onclick="checkCredentials()"
+                                class="btn"
+                            >
+                                الدخول الآن
+                            </button>
+                            <div class="login-register">
+                                <!-- <p>
+                                    ليس لديك حساب؟<a
+                                        href="#"
+                                        class="register-link"
+                                        >اشتراك</a
+                                    >
+                                </p> -->
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- <div class="form-box register">
+                        <h2>تسجيل حساب</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"
+                                    ><ion-icon name="person"></ion-icon
+                                ></span>
+                                <input type="text" required />
+                                <label>اسم المستخدم</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"
+                                    ><ion-icon name="mail"></ion-icon
+                                ></span>
+                                <input type="email" required />
+                                <label>البريد الإلكتروني</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"
+                                    ><ion-icon name="lock-closed"></ion-icon
+                                ></span>
+                                <input type="password" required />
+                                <label>كلمة المرور</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label
+                                    ><input type="checkbox" /> أوافق علي شروط
+                                    الاستخدام وسياسة الخصوصية</label
+                                >
+                            </div>
+                            <button type="submit" class="btn">
+                                تسجيل الحساب
+                            </button>
+                            <div class="login-register">
+                                <p>
+                                    هل لديك حساب بالفعل؟<a
+                                        href="#"
+                                        class="login-link"
+                                        >تسجيل الدخول</a
+                                    >
+                                </p>
+                            </div>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <section class="continer">
+            <footer>
+                <div class="footer-content">
+                    <h3>محاسبة بالمعلقة</h3>
+                    <p>
+                        نسعي لتوفير محتوي تعليمي إلكتروني منهجي، وتسهيل فهم المفاهيم
+                        المحاسبية بالإضافة الي تقديم تمارين وحلول لتطبيق العلم
+                        النظري علي الواقع العملي
+                    </p>
+                    <h3>تواصل معنا !</h3>
+                    <ul class="socials">
+                        <li>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/01091043572"><i class="fa-brands fa-whatsapp"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                ><i class="fa-brands fa-telegram"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <p>
+                        تم تصميم موقع محاسبة بالمعلقة بواسطة
+                        <span>TeamStone</span>
+                    </p>
+                </div>
+            </footer>
+        </section>
+        <script src="JS/js.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>
